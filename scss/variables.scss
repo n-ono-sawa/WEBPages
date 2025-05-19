@@ -1,0 +1,36 @@
+// Color variables
+$white: #fff;
+$red: #f00;
+$blue_A: #0056b3;
+$lightOrange: #fbb03f;
+$orange: #f7931d;
+$orange_B: #ea5e36;
+$lightBlue_A: #ccedfc;
+$lightBlue_B: #58ccf5;
+$lightGreen: #7fc7a4;
+$pink: #ee1e7b;
+$lightPink: #f7bdd7;
+$lightPink_A: #f09e9a;
+$brown: #522411;
+$lightPurple: #6956a5;
+$grape: #a96bad;
+
+// Font size variables
+$smallSize: 0.8rem;
+$normalSize: 1rem;
+$largeSize: 1.5rem;
+
+// Breakpoints
+$breakpoints: (
+  'sm': 375px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1440px
+);
+
+// Mixins
+@mixin mq($breakpoint: md) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}

@@ -1,0 +1,145 @@
+@use "./variables" as *;
+
+// ----------------
+// BoxLayout
+// ----------------
+.p-0 {
+  padding: 0 !important;
+}
+
+.px-05Rem {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-05Rem {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-1Rem {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pl05Rem {
+  padding-left: 0.5rem;
+}
+
+.pt1Rem {
+  padding-top: 1rem;
+}
+
+.pt2Rem {
+  padding-top: 2rem;
+}
+
+.pt4Rem {
+  padding-top: 4rem;
+}
+
+.m-0 {
+  margin: 0px !important;
+}
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mx-05Rem {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-1Rem {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.my-05rem {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-1rem {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mt05Rem {
+  margin-top: 0.5rem;
+}
+
+.mt1Rem {
+  margin-top: 1rem;
+}
+
+.mt2Rem {
+  margin-top: 2rem;
+}
+
+.mt3Rem {
+  margin-top: 3rem;
+}
+
+.ml05Rem {
+  margin-left: 0.5rem;
+}
+
+.mr05Rem {
+  margin-right: 0.5rem;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb05Rem {
+  margin-bottom: 0.5rem;
+}
+
+.mb1Rem {
+  margin-bottom: 1rem;
+}
+
+.mb2Rem {
+  margin-bottom: 2rem;
+}
+
+.mb3Rem {
+  margin-bottom: 3rem;
+}
+
+.mb4Rem {
+  margin-bottom: 4rem;
+}
+
+/* クローズリンクにコメント付き非表示 */	/* Size Selector */
+.closed_container {	
+  position: relative;	
+  pointer-events: none;	
+}
+
+.closed_container div::after,	
+.closed_container a::after {	
+  content: "満席につき締め切りました";	
+  position: absolute;	
+  top: 0;	
+  left: 0;	
+  right: 0;	
+  bottom: 0;	
+  margin: auto;	
+  display: flex;	
+  flex-direction: column;	
+  justify-content: center;	
+  align-items: center;	
+  border-radius: 0.25rem;	
+  font-size: 0.8rem;	
+  background-color: #686868;	
+  color: #fff;	
+}

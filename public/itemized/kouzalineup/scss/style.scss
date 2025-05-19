@@ -1,0 +1,19 @@
+// ----------------
+// base css
+// ----------------
+@use "/scss/cartDesign";
+@use "/scss/component";
+@use "/scss/font-awesome";
+@use "/scss/sawakenweb";
+@use "/scss/slick";
+@use "/scss/baseStyle";
+
+
+// ----------------
+// css imports
+// ----------------
+@use "./variables";
+@use "./boxLayout";
+@use "./fonts";
+@use "./title";
+@use "./main";

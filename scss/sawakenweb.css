@@ -1,0 +1,97 @@
+@charset "UTF-8";
+i.fa-spin {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+#loading {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  text-align: center;
+  padding-top: -100px;
+  z-index: 1100;
+}
+
+#loading i.fa-spin {
+  margin: 35vh auto 0;
+  font-size: 5rem;
+  color: #fff;
+}
+
+#globalHeader .right .sawakenweb-cart {
+  margin-left: 10px;
+}
+
+#globalHeader .right .sawakenweb-cart i.cart {
+  font-size: 2.5rem;
+  color: #f88f8f;
+}
+
+/*カートの文字追加*/
+.sawakenweb-cart a {
+  text-decoration: none;
+}
+
+.kagoshita {
+  line-height: 1;
+  font-size: 11px;
+  width: auto;
+  color: #e98a8a;
+  text-align: center;
+}
+
+.badge {
+  border-radius: 0.25rem;
+  display: inline-block;
+  /*トップぺージと下層で文字の大きさが違っていたため修正
+     font-size: 75%;*/
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.25em 0.4em;
+  text-align: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.cart-badge {
+  background-color: #e74c3c;
+  color: #fff;
+  vertical-align: top;
+  /*位置調整
+     margin-left: -14px;*/
+  margin-left: -9px;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.visibility-hidden {
+  visibility: hidden !important;
+}
+
+@media screen and (max-width: 768px) {
+  #globalHeader .right .sawakenweb-cart, #globalHeader .right .utility-link .user-btn-mypage {
+    margin-left: 7px;
+  }
+  /*カートの文字追加により変更*/
+  #globalHeader .right .sawakenweb-cart i.cart {
+    font-size: 2.2rem;
+  }
+  .cart-badge {
+    margin-left: -7px;
+  }
+  .kagoshita {
+    line-height: 0.8;
+    font-size: 10px;
+    padding-bottom: 3px;
+  }
+}/*# sourceMappingURL=sawakenweb.css.map */

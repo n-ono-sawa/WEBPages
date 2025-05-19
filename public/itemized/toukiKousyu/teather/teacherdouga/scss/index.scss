@@ -1,0 +1,80 @@
+.bookbox {
+  margin: 1em 0 4em;
+  color: #565656;
+  background: #ffeaea;
+  box-shadow: 0px 0px 0px 10px #ffeaea;
+  border: dashed 2px #ffc3c3;
+  border-radius: 8px;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1.checkpoint {
+    position: relative;
+    color: red;
+    line-height: 1.4;
+    padding: 0.25em 0.5em;
+    margin: 2em 0 0.5em;
+
+    &:after {
+      /*タブ*/
+      position: absolute;
+      font-family: FontAwesome, "Quicksand", "Avenir", "Arial", sans-serif;
+      content: "\f00c Check";
+      background: rgba(243, 33, 33, 0.74);
+      color: #fff;
+      left: 0px;
+      bottom: 100%;
+      border-radius: 5px 5px 0 0;
+      padding: 3px 7px 1px;
+      line-height: 1;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+h3.booktitle {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.thum {
+  float: right;
+  width: 230px;
+}
+
+p {
+  &.indentback {
+    text-indent: -1em;
+    padding-left: 1em;
+  }
+
+  &.indentback4em {
+    text-indent: -3em;
+    padding-left: 4em;
+  }
+}
+
+.bookbox .textbox p {
+  font-size: 15px;
+  line-height: 1.6;
+  padding-bottom: 1.6em;
+
+  &.indent {
+    margin: 0 0 0 1em !important;
+    text-indent: -1em;
+  }
+
+  a {
+    color: blue;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .bookbox .textbox p {
+    font-size: 14px;
+  }
+}

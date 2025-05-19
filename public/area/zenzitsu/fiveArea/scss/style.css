@@ -1,0 +1,1147 @@
+@charset "UTF-8";
+.p-0 {
+  padding: 0 !important;
+}
+
+.px-05Rem {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-05Rem {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-1Rem {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pl05Rem {
+  padding-left: 0.5rem;
+}
+
+.pt1Rem {
+  padding-top: 1rem;
+}
+
+.pt2Rem {
+  padding-top: 2rem;
+}
+
+.pt4Rem {
+  padding-top: 4rem;
+}
+
+.m-0 {
+  margin: 0px !important;
+}
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mx-05Rem {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-1Rem {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.my-05rem {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-1rem {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mt05Rem {
+  margin-top: 0.5rem;
+}
+
+.mt1Rem {
+  margin-top: 1rem;
+}
+
+.mt2Rem {
+  margin-top: 2rem;
+}
+
+.mt3Rem {
+  margin-top: 3rem;
+}
+
+.ml05Rem {
+  margin-left: 0.5rem;
+}
+
+.mr05Rem {
+  margin-right: 0.5rem;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb05Rem {
+  margin-bottom: 0.5rem;
+}
+
+.mb1Rem {
+  margin-bottom: 1rem;
+}
+
+.mb2Rem {
+  margin-bottom: 2rem;
+}
+
+.mb3Rem {
+  margin-bottom: 3rem;
+}
+
+.mb4Rem {
+  margin-bottom: 4rem;
+}
+
+/* Size Selector */
+small {
+  font-size: clamp(0.75rem, 0.5667938931rem + 0.3816793893vw, 0.8125rem);
+}
+
+.fs08Rem {
+  font-size: 0.8rem;
+}
+
+.fs1Rem,
+.fs1_25Rem {
+  font-size: 1rem;
+}
+
+.fs1_5Rem {
+  font-size: 1.5rem;
+}
+
+.fs2Rem {
+  font-size: 2rem;
+}
+
+.lightPurple-color .section-heading {
+  border-bottom: 2px solid #6956a5;
+}
+.lightPurple-color .lecture-info .info-table th {
+  background-color: #6956a5;
+}
+.lightPurple-color .lecture-info .info-details h3 {
+  color: #6956a5;
+  border-bottom: 2px solid #6956a5;
+}
+
+.orange-color .section-heading {
+  border-bottom: 2px solid #ea5e36;
+}
+.orange-color .lecture-info .info-table th {
+  background-color: #ea5e36;
+}
+.orange-color .lecture-info .info-details h3 {
+  color: #ea5e36;
+  border-bottom: 2px solid #ea5e36;
+}
+
+.lightOrange-color .section-heading {
+  border-bottom: 2px solid #fbb03f;
+}
+.lightOrange-color .lecture-info .info-table th {
+  background-color: #fbb03f;
+}
+.lightOrange-color .lecture-info .info-details h3 {
+  color: #fbb03f;
+  border-bottom: 2px solid #fbb03f;
+}
+
+.grape-color .section-heading {
+  border-bottom: 2px solid #a96bad;
+}
+.grape-color .lecture-info .info-table th {
+  background-color: #a96bad;
+}
+.grape-color .lecture-info .info-details h3 {
+  color: #a96bad;
+  border-bottom: 2px solid #a96bad;
+}
+
+.lightBlue-color .section-heading {
+  border-bottom: 2px solid #58ccf5;
+}
+.lightBlue-color .lecture-info .info-table th {
+  background-color: #58ccf5;
+}
+.lightBlue-color .lecture-info .info-details h3 {
+  color: #58ccf5;
+  border-bottom: 2px solid #58ccf5;
+}
+
+.lightPink-color .section-heading {
+  border-bottom: 2px solid #f09e9a;
+}
+.lightPink-color .lecture-info .info-table th {
+  background-color: #f09e9a;
+}
+.lightPink-color .lecture-info .info-details h3 {
+  color: #f09e9a;
+  border-bottom: 2px solid #f09e9a;
+}
+
+.lightGreen-color .section-heading {
+  border-bottom: 2px solid #7fc7a4;
+}
+.lightGreen-color .lecture-info .info-table th {
+  background-color: #7fc7a4;
+}
+.lightGreen-color .lecture-info .info-details h3 {
+  color: #7fc7a4;
+  border-bottom: 2px solid #7fc7a4;
+}
+
+.lecture-info-section {
+  padding: 2rem;
+  background: #f3f0e9;
+  border-radius: 1rem;
+}
+.lecture-info-section .info-details-list li {
+  border-bottom: 5px solid #c0bdb8;
+}
+.lecture-info-section .info-details-list li p {
+  position: relative;
+}
+.lecture-info-section .info-details-list li p .txtArea {
+  position: absolute;
+  width: 14rem;
+  top: 0;
+  bottom: 0;
+  height: 2rem;
+  text-indent: -0.95rem;
+  padding-left: 0.95rem;
+  margin: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #9b907a;
+}
+
+.lecture-info .info-table th,
+.lecture-info .info-table td {
+  padding: 15px 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+.lecture-info .info-table th {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.lecture-info .info-table th:last-child {
+  width: 10rem;
+}
+.lecture-info .info-table td {
+  width: 7rem;
+  font-size: 1rem;
+  border-right: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.lecture-info .info-table td:first-of-type {
+  border-left: 1px solid #f3f3f3;
+  text-align: center;
+}
+.lecture-info .info-table td:nth-child(2), .lecture-info .info-table td:last-of-type {
+  background: #ccedfc;
+}
+.lecture-info .info-table th span {
+  font-size: 0.9rem;
+  font-weight: normal;
+  display: block;
+  margin-top: 5px; /* 改行させる */
+}
+.lecture-info .info-details-list {
+  list-style-type: none;
+  padding: 0;
+}
+.lecture-info .info-details-list li {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.lecture-info .info-details h3 {
+  color: #7f7563;
+  font-weight: bold;
+  margin-top: 0;
+  font-size: 20px;
+  border-bottom: 2px solid #7f7563;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.lecture-info .info-details p,
+.lecture-info .info-details time {
+  font-size: 1.25rem;
+}
+.lecture-info .info-details p small {
+  font-size: 14px;
+}
+.lecture-info .info-details span {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .lecture-info-section {
+    padding: 2rem 1rem;
+  }
+  .lecture-info-section .info-details-list li p .txtArea {
+    position: unset;
+    display: inline-block;
+    margin: 1rem auto 0;
+    width: 100%;
+    font-size: 0.95rem;
+  }
+  .lecture-info-section .info-details-list li .infoTxt {
+    margin: 0;
+  }
+  .lecture-info .info-details h3 {
+    font-size: 18px;
+  }
+  .lecture-info .info-details p,
+  .lecture-info .info-details span {
+    font-size: 14px;
+  }
+  .lecture-info .info-details span {
+    margin-left: 0;
+  }
+}
+.zoom-section {
+  padding: 0;
+  margin: 0 auto 2rem;
+}
+.zoom-section .zoom-card-title {
+  font-size: 28px;
+}
+.zoom-section .zoom-card-content {
+  padding: 30px;
+}
+.zoom-section .info-box {
+  padding: 20px;
+}
+.zoom-section .container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.zoom-section .zoom-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.zoom-section .zoom-card-header {
+  padding: 20px;
+  text-align: center;
+}
+.zoom-section .zoom-card-title {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-section .zoom-card-title i {
+  margin-right: 10px;
+  font-size: 28px;
+}
+.zoom-section .zoom-card-content {
+  padding: 20px;
+}
+.zoom-section .info-box {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.02);
+  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+}
+.zoom-section .info-box:last-child {
+  margin-bottom: 0;
+}
+.zoom-section .info-box h3 {
+  margin-right: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+}
+.zoom-section .info-box h3 i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+.zoom-section .info-box .titleTxt {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+.zoom-section .txt {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+.zoom-section p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.section-wrapper {
+  margin-bottom: 4rem;
+}
+
+.section-inner {
+  content: "";
+  display: block;
+}
+
+.section-heading {
+  text-align: left;
+  color: #666;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .section-wrapper {
+    margin-bottom: 3rem;
+  }
+  .section-wrapper .important-txt {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: normal;
+    border-radius: 2rem;
+    background: #f26763;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: -1rem auto 1.25rem;
+    display: block;
+    position: unset;
+  }
+}
+.fColor-Red {
+  color: #f00;
+}
+
+.fColor-Brown {
+  color: #522411;
+}
+
+.fColor-pink {
+  color: #ee1e7b;
+}
+
+.fColor-lightPink_A {
+  color: #f09e9a;
+}
+
+.fColor-lightOrange {
+  color: #fbb03f;
+}
+
+.fColor-orange {
+  color: #f7931d;
+}
+
+.fColor-orange_B {
+  color: #ea5e36;
+}
+
+.fColor-lightBlue_B {
+  color: #58ccf5;
+}
+
+.fColor-lightGreen {
+  color: #7fc7a4;
+}
+
+.fColor-lightPurple {
+  color: #6956a5;
+}
+
+.fColor-grape {
+  color: #a96bad;
+}
+
+.bg-sky {
+  background-color: #0056b3;
+}
+
+.bg-babyBlue {
+  background-color: #ccedfc;
+}
+
+.bg-lightOrange {
+  background-color: #fbb03f;
+}
+
+.bg-orange {
+  background-color: #f7931d;
+}
+
+.bg-orange_B {
+  background-color: #ea5e36;
+}
+
+.bg-lightBlue_B {
+  background-color: #58ccf5;
+  color: #fff;
+}
+
+.bg-lightGreen {
+  background-color: #7fc7a4;
+}
+
+.bg-lightPurple {
+  background-color: #6956a5;
+}
+
+.bg-grape {
+  background-color: #a96bad;
+}
+
+.bg-pink {
+  background-color: #ee1e7b;
+  color: #fff;
+}
+
+.bg-lightPink {
+  background-color: #f7bdd7;
+  color: #fff;
+}
+
+.bg-lightPink_A {
+  background-color: #f09e9a;
+}
+
+.bd-lightPink_A {
+  border: 2px solid #f09e9a;
+}
+
+.bd-grape {
+  border: 2px solid #a96bad;
+}
+
+.bd-lightBlue_B {
+  border: 2px solid #58ccf5;
+}
+
+.bd-orange_B {
+  border: 2px solid #ea5e36;
+}
+
+.bd-lightOrange {
+  border: 2px solid #fbb03f;
+}
+
+.bd-lightGreen {
+  border: 2px solid #7fc7a4;
+}
+
+#mapAreaA {
+  z-index: 1;
+}
+
+#mapAreaB {
+  z-index: 0;
+}
+
+#access_btn {
+  z-index: -1;
+}
+
+.borderR05 {
+  border-radius: 0.5rem;
+}
+
+.borderR1 {
+  border-radius: 1rem;
+}
+
+.fwB {
+  font-weight: bold;
+}
+
+.fwN {
+  font-weight: normal;
+}
+
+.cartArea a {
+  font-size: 1.08rem;
+  color: blue;
+  text-decoration: underline;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.position-unset {
+  position: unset;
+}
+
+.d-block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.dotted-Pink {
+  background-image: linear-gradient(to right, #ee1e7b 20px, transparent 20px);
+  background-size: 40px 4px;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+
+.txtShadow-wLine {
+  text-shadow: 3px 3px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.zindex-1 {
+  z-index: -1;
+}
+
+.zindex1 {
+  z-index: 1;
+}
+
+/*
+@media (max-width: 768px) {
+}
+
+// ipad
+@media (min-width: 768px) and (max-width: 1024px) {
+}*/
+.lectureFormat {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.lectureFormat-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.lectureFormat-wrap-list {
+  border-radius: none !important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+.lectureFormat-wrap-list-container {
+  margin-bottom: 10px !important;
+}
+.lectureFormat-wrap-list-container-list {
+  padding: 0 0 10px 0 !important;
+  margin-bottom: 0 !important;
+}
+.lectureFormat-wrap-list-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.lectureFormat-wrap-list-txt {
+  font-size: 1.25rem;
+}
+.lectureFormat-wrap-list-subtitle, .lectureFormat-wrap-list-timeWrap h5 {
+  display: inline-block;
+  border: 2px solid;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  background: #fff;
+}
+
+/* メディアクエリでレスポンシブ対応 */
+@media (min-width: 768px) {
+  .section-wrapper {
+    margin-bottom: 4rem;
+  }
+  .lectureFormat-wrap {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.page-links {
+  padding: 10px 20px;
+  margin-bottom: 4rem;
+  border-radius: 8px;
+  text-align: center;
+  background: #f1f1f1 url(https://www.sawa-kenkyujo.com/wpcms/wp-content/uploads/jamap_v1.png) no-repeat 0 2rem/70%;
+}
+
+.page-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.page-links ul li {
+  width: 12rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: block;
+  margin: 1.5rem 2rem 1.5rem auto;
+}
+
+.page-links a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #ee1e7b;
+  padding: 8px 5px;
+  border: 1px solid #ee1e7b;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-links a:hover {
+  background-color: #ee1e7b;
+  color: #fff;
+}
+
+/* スムーズスクロールを適用 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* レスポンシブ対応 */
+/* レスポンシブ対応 */
+@media (min-width: 410px) and (max-width: 768px) {
+  .page-links ul {
+    margin-top: 45vw;
+  }
+  .page-links ul li {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px 5px;
+    margin: 0;
+    display: block;
+  }
+  .page-links a {
+    width: 100%;
+    height: 100%;
+    padding: 8px 5px;
+    font-size: 1rem;
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .page-links {
+    padding: 10px 5px;
+    background: #f1f1f1 url(https://www.sawa-kenkyujo.com/wpcms/wp-content/uploads/jamap_v1.png) no-repeat center 0.25rem/60%;
+  }
+  .page-links ul {
+    margin-top: 40vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    gap: 5px;
+    grid: 0;
+  }
+  .page-links ul li {
+    width: 100%;
+    margin: 0;
+  }
+  .page-links a {
+    font-size: 1rem;
+    padding: 10px 5px;
+    display: block;
+  }
+}
+.courses-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 1rem;
+}
+
+.courses-grid .fa-icon2_item1.p_chousei {
+  font-weight: normal;
+}
+
+.courses-grid .fa-cart-shopping {
+  margin-right: 1rem;
+}
+
+.course-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 15px;
+}
+
+.course-item .fa-building {
+  margin-right: 0.5rem;
+}
+
+.courseColorBlue {
+  background: #eaf8ff;
+}
+
+.courseColorOrange {
+  background: #fbf3e8;
+}
+
+.courseColorOrange_B {
+  background: #ffeee1;
+}
+
+.courseColorGreen {
+  background: #eafff3;
+}
+
+.courseColorPurple {
+  background: #f8e8fb;
+}
+
+.courseColorPink {
+  background: #fff0fa;
+}
+
+.course-info {
+  line-height: 1.4;
+  color: #333;
+}
+
+.cart-button {
+  text-align: center;
+}
+
+.blue .btn {
+  background-color: #3498db;
+}
+
+.orange .btn {
+  background-color: #e67e22;
+}
+
+/* sawa od button */
+.sawa-od-container {
+  font-family: "Noto Sans JP", sans-serif;
+  padding: 30px 0;
+  margin-top: 2rem;
+}
+
+.sawa-od-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+a.sawa-od-link {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  place-content: center;
+  place-items: center;
+  transition: all 0.3s ease;
+}
+
+.sawa-od-link:hover .link-text .fa-caret-down {
+  bottom: 20px;
+  opacity: 0;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.sawa-od-content {
+  padding: 3rem 2rem 3rem 5rem;
+  width: 100%;
+  background: #0066cc;
+  color: #ffffff;
+  transition: background-color 1s linear;
+}
+
+.sawa-od-link:hover .sawa-od-content {
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  transition: background-color 1s linear;
+}
+
+.sawa-od-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.sawa-od-description {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.fa-icon_item2 {
+  flex-shrink: 0;
+  width: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-icon_item2 i {
+  line-height: 40px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.fa-icon i:after {
+  padding: 0;
+  line-height: 40px;
+}
+
+.fa-icon2_wrap {
+  background: #ffffff;
+  width: 400px;
+  margin: 0 auto 0 0;
+}
+
+.fa-icon2_wrap2 {
+  background: #ffffff;
+  width: 400px;
+  margin: 0 auto 0;
+}
+
+.fa-icon2 {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.fa-icon2:hover {
+  opacity: 70%;
+}
+
+.fa-icon2_item1 {
+  flex: 1;
+  padding: 0 20px 0;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-icon2_item1.p_chousei {
+  padding: 0 15px 0;
+}
+
+.fa-icon2_item2 {
+  flex-shrink: 0;
+  width: 80px;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-icon2_item2 i {
+  line-height: 80px;
+  font-size: 3em;
+  color: #fff;
+}
+
+.fa-icon2 i:after {
+  pad: 0;
+  line-height: 40px;
+}
+
+.pinkbtn1 {
+  background: #f3b0d4 !important;
+}
+
+.pinkbtn2 {
+  background: #b57f9c !important;
+}
+
+.lightbluebtn1 {
+  background: #6eb0ff !important;
+}
+
+.lightbluebtn2 {
+  background: #4978b1 !important;
+}
+
+.lightblue2btn1 {
+  background: #50b2e3 !important;
+}
+
+.lightblue2btn2 {
+  background: #359bce !important;
+}
+
+.lightblue3btn1 {
+  background: #66ccff !important;
+}
+
+.lightblue3btn2 {
+  background: #5db1db !important;
+}
+
+.darkbluebtn1 {
+  background: #1d2088 !important;
+}
+
+.darkbluebtn2 {
+  background: #131557 !important;
+}
+
+.lightgreenbtn1 {
+  background: #59c98c !important;
+}
+
+.lightgreenbtn2 {
+  background: #449167 !important;
+}
+
+.orangebtn1 {
+  background: #f8a12d !important;
+}
+
+.orangebtn2 {
+  background: #ba7b26 !important;
+}
+
+.orange2btn1 {
+  background: #ff9966 !important;
+}
+
+.orange2btn2 {
+  background: #db855a !important;
+}
+
+.orange3btn1 {
+  background: #ff6600 !important;
+}
+
+.orange3btn2 {
+  background: #e05a00 !important;
+}
+
+.yellowbtn1 {
+  background: #ffcc00 !important;
+}
+
+.yellowbtn2 {
+  background: #c6ad4a !important;
+}
+
+.yellowgreenbtn1 {
+  background: #8fc31f !important;
+}
+
+.yellowgreenbtn2 {
+  background: #6f961a !important;
+}
+
+.murasakibtn1 {
+  background: #cc66ff !important;
+}
+
+.murasakibtn2 {
+  background: #9a4fbf !important;
+}
+
+.murasaki2btn1 {
+  background: #9933cc !important;
+}
+
+.murasaki2btn2 {
+  background: #662189 !important;
+}
+
+.lightpinkbtn1 {
+  background: #ff9999 !important;
+}
+
+.lightpinkbtn2 {
+  background: #de8888 !important;
+}
+
+#national::before,
+#sendai::before,
+#tokyo::before,
+#osaka::before,
+#nagoya::before,
+#fukuoka::before {
+  content: "";
+  display: block;
+  padding-top: 8rem;
+  margin-top: -8rem;
+  position: relative;
+  z-index: -1;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .course-item {
+    display: block;
+  }
+  .course-info {
+    margin-bottom: 0.5rem;
+  }
+  .course-info p {
+    font-size: 1rem;
+  }
+  .fa-icon2_wrap,
+  .fa-icon2 {
+    width: 100%;
+  }
+  #national::before,
+  #sendai::before,
+  #tokyo::before,
+  #osaka::before,
+  #nagoya::before,
+  #fukuoka::before {
+    padding-top: 5rem;
+    margin-top: -5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

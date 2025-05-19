@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+/* button */
+button .fa-icon_item2 {
+  flex-shrink: 0;
+  width: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-icon_item2 i {
+  line-height: 40px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.fa-icon i:after {
+  padding: 0;
+  line-height: 40px;
+}
+
+.fa-icon2_wrap {
+  background: #ffffff;
+  width: 400px;
+  margin: 0 auto 0 0;
+}
+
+.fa-icon2_wrap2 {
+  background: #ffffff;
+  width: 400px;
+  margin: 0 auto 0;
+}
+
+.fa-icon2 {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+.fa-icon2:hover {
+  opacity: 70%;
+}
+
+.fa-icon2_item1 {
+  flex: 1;
+  padding: 0 20px 0;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-icon2_item1.p_chousei {
+  padding: 0 15px 0;
+}
+
+.fa-icon2_item2 {
+  flex-shrink: 0;
+  width: 80px;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-icon2_item2 i {
+  line-height: 80px;
+  font-size: 3em;
+  color: #fff;
+}
+
+.fa-icon2 i:after {
+  pad: 0;
+  line-height: 40px;
+}
+
+.pinkbtn1 {
+  background: #f3b0d4 !important;
+}
+
+.pinkbtn2 {
+  background: #b57f9c !important;
+}
+
+.lightbluebtn1 {
+  background: #6eb0ff !important;
+}
+
+.lightbluebtn2 {
+  background: #4978b1 !important;
+}
+
+.lightblue2btn1 {
+  background: #50b2e3 !important;
+}
+
+.lightblue2btn2 {
+  background: #359bce !important;
+}
+
+.lightblue3btn1 {
+  background: #66ccff !important;
+}
+
+.lightblue3btn2 {
+  background: #5db1db !important;
+}
+
+.darkbluebtn1 {
+  background: #1d2088 !important;
+}
+
+.darkbluebtn2 {
+  background: #131557 !important;
+}
+
+.lightgreenbtn1 {
+  background: #59c98c !important;
+}
+
+.lightgreenbtn2 {
+  background: #449167 !important;
+}
+
+.orangebtn1 {
+  background: #f8a12d !important;
+}
+
+.orangebtn2 {
+  background: #ba7b26 !important;
+}
+
+.orange2btn1 {
+  background: #ff9966 !important;
+}
+
+.orange2btn2 {
+  background: #db855a !important;
+}
+
+.orange3btn1 {
+  background: #ff6600 !important;
+}
+
+.orange3btn2 {
+  background: #e05a00 !important;
+}
+
+.yellowbtn1 {
+  background: #ffcc00 !important;
+}
+
+.yellowbtn2 {
+  background: #c6ad4a !important;
+}
+
+.yellowgreenbtn1 {
+  background: #8fc31f !important;
+}
+
+.yellowgreenbtn2 {
+  background: #6f961a !important;
+}
+
+.murasakibtn1 {
+  background: #cc66ff !important;
+}
+
+.murasakibtn2 {
+  background: #9a4fbf !important;
+}
+
+.murasaki2btn1 {
+  background: #9933cc !important;
+}
+
+.murasaki2btn2 {
+  background: #662189 !important;
+}
+
+.lightpinkbtn1 {
+  background: #ff9999 !important;
+}
+
+.lightpinkbtn2 {
+  background: #de8888 !important;
+}
+
+/* クローズリンクにコメント付き非表示 */
+.closed_container {
+  position: relative;
+  pointer-events: none;
+}
+.closed_container div::after,
+.closed_container a::after {
+  content: "満席につき締め切りました";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  background-color: #686868;
+  color: #fff;
+}

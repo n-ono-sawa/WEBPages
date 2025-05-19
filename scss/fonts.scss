@@ -1,0 +1,63 @@
+@use "sass:math";
+@use "./variables" as *;
+
+
+// -----------------------
+/* Size Selector */
+// clamp関数 関数を定義
+
+@function rclamp($min, $max, $minViewport, $maxViewport) {
+  /* （minとmaxはフォントサイズの最小・最大値をピクセル単位で指定
+      minViewportとmaxViewportはこのフォントサイズ調整を適用する
+      ビューポートの最小はばと最大幅（ピクセル単位））*/
+
+  // 計算の下処理
+  // ビューポートの幅が変化するにつれて、値が特定の範囲で変化するようにしている
+  $vwScale: ($max - $min) / ($maxViewport - $minViewport);
+  // vw単位でのスケールを計算
+  // vwScale:ビューポートが1px変化するごとに値がどれだけ変化するかを示す
+
+  $baseOffset: $min - $minViewport * $vwScale;
+  // 基準となる最小値からのオフセットを計算
+  // baseOffset: 最小ビューポート幅での値を正確に調整するために使用している
+
+  // 単位変換の下処理（単位をピクセルからremに変換）
+  $minRem: $min / 16; // 最小値をremに変換
+  $maxRem: $max / 16; // 最大値をremに変換
+  $baseOffsetRem: $baseOffset / 16; // オフセットをremに変換
+  $vwScaleRem: $vwScale * 100; // vwスケールを調整
+  // $vwScaleRemは、vw単位をつけた際に調整してくれるよう100をかけている
+
+  // 結果をリターン
+  // これまで求めてきた数値に単位をつけて返している
+  @return clamp(
+    #{$minRem}rem,
+    #{$baseOffsetRem}rem + #{$vwScaleRem}vw,
+    #{$maxRem}rem
+      /* 最小フォントサイズ
+      ビューポートの幅に応じて変化する値
+      最大フォントサイズ */
+  );
+}
+
+small {
+  font-size: rclamp(12, 13, 768, 1030);
+}
+
+// ----------------
+// font-size
+// ----------------
+
+.fs08Rem { font-size: $smallSize; }
+.fs1Rem,
+.fs1_25Rem { font-size: $normalSize; }
+.fs1_5Rem { font-size: $largeSize; }
+.fs2Rem { font-size: 2rem; }
+
+// ----------------
+// size-variable
+// ----------------
+
+$smallSize: 0.8rem;
+$normalSize: 1rem;
+$largeSize: 1.5rem;

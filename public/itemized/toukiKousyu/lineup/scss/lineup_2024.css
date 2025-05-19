@@ -1,0 +1,599 @@
+@charset "UTF-8";
+.d-block {
+  display: block;
+}
+
+.mt2Rem {
+  margin-top: 2rem;
+}
+
+.mb2Rem {
+  margin-bottom: 2rem;
+}
+
+.mb4Rem {
+  margin-bottom: 4rem;
+}
+
+.mr05Rem {
+  margin-right: 0.5rem;
+}
+
+.pl05Rem {
+  padding-left: 0.5rem;
+}
+
+.pl08Rem {
+  padding-left: 0.8rem;
+}
+
+.fColor-Red {
+  color: #f00;
+}
+
+.zoomContentArea .fColor-Blue {
+  color: #00f;
+}
+
+.bookbox {
+  margin: 1em 0 4em;
+  color: #565656;
+  background: #e3f9e3;
+  box-shadow: 0px 0px 0px 10px #e3f9e3;
+  border: dashed 2px #0fc716;
+  border-radius: 8px;
+}
+
+.bookbox p {
+  margin: 0;
+  padding: 0;
+}
+
+.bookbox h1.checkpoint {
+  position: relative;
+  color: red;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+}
+
+.bookbox h1.checkpoint:after {
+  /*タブ*/
+  position: absolute;
+  font-family: FontAwesome, "Quicksand", "Avenir", "Arial", sans-serif;
+  content: "\f00c Check";
+  background: rgba(243, 33, 33, 0.74);
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 3px 7px 1px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+h3.booktitle {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.thum {
+  float: right;
+  width: 230px;
+}
+
+p.indent2 {
+  padding: 0px 0px 0px 15px;
+}
+
+p.indentback {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+p.indentback4em {
+  text-indent: -3em;
+  padding-left: 4em;
+}
+
+p.margin_adjust_pc {
+  padding-top: 125px;
+  margin-top: -125px;
+}
+
+p.margin_adjust_nopc {
+  padding-top: 90px;
+  margin-top: -90px;
+}
+
+.text-ichi-chousei {
+  padding: 0 5% 0 5%;
+}
+
+.banner_yokonarabi {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.banner_yokonarabi_item1 {
+  width: 335px;
+  margin-bottom: 20px;
+}
+
+.banner_yokonarabi_item1 img {
+  width: 100%;
+}
+
+.banner_yokonarabi_item1 a:hover img {
+  opacity: 50%;
+}
+
+.banner_yokonarabi_item2 {
+  width: 335px;
+  margin-bottom: 20px;
+}
+
+.banner_yokonarabi_item2 img {
+  width: 100%;
+}
+
+.banner_yokonarabi_item2 a:hover img {
+  opacity: 50%;
+}
+
+span.indent_list {
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+span.sawaod_midashi {
+  color: red;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 640px) {
+  .banner_yokonarabi {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .banner_yokonarabi_item1 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .banner_yokonarabi_item2 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+/********************20231002追加*****************/
+p.kouza_midashi {
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+p.kouza_ichiran {
+  margin-bottom: 0px;
+  text-indent: 1em;
+  padding-bottom: 15px;
+}
+
+p.kouza_ichiran2 {
+  margin-bottom: 0px;
+  text-indent: 1em;
+  padding-bottom: 8px;
+}
+
+p.kouzaichiran_midashi {
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+  text-align: left;
+  font-weight: bold;
+  text-indent: 1em;
+  color: rgb(14, 69, 31);
+}
+
+span.detail_position {
+  text-decoration: underline;
+  color: rgb(14, 69, 31);
+  font-size: 1.05em;
+  cursor: pointer;
+}
+
+li.venue_list {
+  margin-bottom: 10px;
+}
+
+li.kouza_detail {
+  padding-bottom: 5px;
+  font-size: 1.2em;
+  color: red;
+  /*cursor: pointer;*/
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+span.list1 {
+  font-size: 1.2em;
+  color: rgb(38, 46, 142);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+span.list2 {
+  font-size: 1.2em;
+  color: rgb(132, 49, 112);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a.link_a_list2 {
+  font-size: 1.2em;
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(132, 49, 112);
+}
+
+a.link_a_list2:hover {
+  color: rgb(194, 92, 169);
+}
+
+a.link_a_list2:click {
+  color: rgb(221, 164, 207);
+}
+
+a.area_a {
+  color: rgb(242, 98, 105);
+}
+
+a.area_a:hover {
+  color: rgb(237, 33, 44);
+}
+
+ol.open {
+  margin: 5px 0px 10px 35px;
+  padding: 0px;
+}
+
+ol.open2_2 {
+  margin: -25px 0px 10px 80px;
+  padding: 0px;
+}
+
+#open2 {
+  margin: -15px 0px 10px 60px;
+  padding: 0px;
+}
+
+@media screen and (max-width: 640px) {
+  ol.open {
+    margin: 5px 0px 10px 12px;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 280px) {
+  li.kouza_detail {
+    padding-bottom: 15px;
+    font-size: 1.2em;
+    color: red;
+    /*cursor: pointer;*/
+    -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+  }
+}
+/*******************20231002追加ここまで**********/
+/********************20231220追加*****************/
+span.area_a {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  color: rgb(242, 98, 105);
+}
+
+span.area_a:hover {
+  color: rgb(237, 33, 44);
+}
+
+/*******************20231220追加ここまで**********/
+/*************************************************/
+/*******************20240725追加ここから**********/
+.category,
+h3.m_midashi {
+  color: #2f2f2f;
+}
+
+.title_touki span {
+  font-size: 0.8rem;
+}
+
+.borderB-1p {
+  border-bottom: 1px solid;
+}
+
+.txt-Blue {
+  color: #3838a1;
+}
+
+.txtArea {
+  margin-left: 1rem;
+}
+
+.txtContainer {
+  margin-bottom: 1.5rem;
+}
+
+.txtContainer p {
+  padding-bottom: 0;
+}
+
+.txtContainer a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.mT-05rem {
+  margin-top: 0.5rem;
+}
+
+.mT-1rem {
+  margin-top: 1rem;
+}
+
+.mB-1_5rem {
+  margin-bottom: 1.5rem;
+}
+
+.mL-1rem {
+  margin-left: 1rem;
+}
+
+.mL-1Hrem {
+  margin-left: 1.5rem;
+}
+
+.mL-2rem {
+  margin-left: 2rem;
+}
+
+.mL-2Hrem {
+  margin-left: 2.5rem;
+}
+
+.mL-3rem {
+  margin-left: 3rem;
+}
+
+.fS-1_25rem {
+  font-size: 1.25rem;
+}
+
+a.btn-red {
+  color: #f00;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+a.btn-aquaBlue {
+  margin-top: 0.5rem;
+  color: #00f;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+a.btn-aoMurasaki {
+  color: #3838a1;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.btn-red::after,
+.btn-aquaBlue::after,
+.btn-aoMurasaki::after {
+  width: 0;
+  height: 0;
+}
+
+.btn-red:hover,
+.btn-aquaBlue:hover,
+.btn-aoMurasaki:hover {
+  color: #03a9f4;
+}
+
+.txtContainer {
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.m_midashi {
+  margin-bottom: 1rem;
+}
+
+/* accordion */
+.accordion {
+  width: 100%;
+}
+
+.accordion-input {
+  display: none;
+}
+
+.accordion-header {
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+  left: 1rem;
+  display: inline-block;
+}
+
+.accordion-header::after {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  transition: transform 0.25s ease;
+}
+
+.accordion-input:checked + .accordion-header::after {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-out;
+  padding: 0 0 0 1rem;
+}
+
+.accordion-input:checked ~ .accordion-content {
+  max-height: 1000px;
+  margin-bottom: 1rem;
+  transition: max-height 0.25s ease-in;
+}
+
+.accordion-header::after {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  top: 60%;
+  transform: translateY(-50%);
+  transition: transform 0.25s ease;
+  pointer-events: none;
+}
+
+.accordion-input:checked + .accordion-header::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.hover-area {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.accordion-input {
+  display: none;
+}
+
+.accordion-input:not(:checked) + .accordion-header .hover-area {
+  pointer-events: all;
+}
+
+.accordion-input:not(:checked) + .accordion-header {
+  pointer-events: none;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease-out;
+}
+
+.accordion-input:checked ~ .accordion-content {
+  max-height: 2000px;
+  transition: max-height 0.25s ease-in;
+}
+
+/* 外側のアコーディオンヘッダーの調整 */
+.outer-accordion > .accordion-header {
+  display: flex;
+  align-items: center;
+  min-height: 2.5rem;
+  /* 必要に応じて調整 */
+}
+
+.outer-accordion > .accordion-header::after {
+  top: 40%;
+}
+
+/* 内側のアコーディオン用のスタイル（必要に応じて調整） */
+/* .inner-accordion .accordion-header {
+    padding-left: 2.5rem;
+} */
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  .accordion-header {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.25rem;
+  }
+  .inner-accordion .accordion-header {
+    font-size: 1rem;
+    padding-left: 2rem;
+  }
+}
+/* / accordion */
+@media screen and (max-width: 768px) {
+  .category {
+    padding: 0 1rem;
+  }
+  .title_touki span {
+    font-size: 0.7rem;
+  }
+  .txtContainer {
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .txtContainer a {
+    font-size: 1rem;
+  }
+  .mL-1rem {
+    margin-left: 0.5rem;
+  }
+  .mL-1Hrem {
+    margin-left: 0.75rem;
+  }
+  .mL-2rem {
+    margin-left: 1rem;
+  }
+  .mL-2Hrem {
+    margin-left: 1.25rem;
+  }
+  .mL-3rem {
+    margin-left: 1.5rem;
+  }
+  .fS-1_25rem {
+    font-size: 1rem;
+  }
+  a.btn-red {
+    font-size: 1rem;
+  }
+  .accordion-header {
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    left: 0.5rem;
+  }
+  .accordion-content {
+    padding: 0 0 0 0.5rem;
+  }
+  .btn-aquaBlue {
+    font-size: 1rem;
+  }
+  .m_midashi {
+    font-size: 1.1rem;
+  }
+  .subContainer {
+    margin-left: 0.5rem;
+  }
+  .textbox p.indent {
+    padding-right: 3.5vw;
+  }
+}
+/*******************20240725追加ここまで**********/
+/*************************************************/
+/*******************20240820追加ここから**********/
+.accordion-content span {
+  color: #f00;
+}
+
+#kouzaArea {
+  display: block;
+}
+
+/*******************20240820追加ここまで**********//*# sourceMappingURL=lineup_2024.css.map */

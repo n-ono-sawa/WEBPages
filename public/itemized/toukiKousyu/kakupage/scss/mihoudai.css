@@ -1,0 +1,644 @@
+@charset "UTF-8";
+.section-wrapper {
+  margin-bottom: 2rem;
+}
+
+.section-heading {
+  position: relative;
+  border-bottom: 2px solid #eb6363;
+  text-indent: -1.5rem;
+  padding-left: 3rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  color: #666;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.materials-container th i {
+  margin-right: 10px;
+}
+
+.section-heading i::before,
+.fa-icon2 i::before,
+.price-table th i::before,
+.fas,
+.fa-mr {
+  margin-right: 0.8rem;
+}
+
+/*見放題プラン*/
+.plan-container {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  border-radius: 10px;
+  padding: 20px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: url(https://stg.sawa-wp.sawakenweb.com/wpcms/wp-content/uploads/Treasurebox01b.jpg) no-repeat center 100%/cover;
+}
+
+.plan-title {
+  color: #fff;
+  border-bottom: 2px solid #fffb48;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.plan-intro {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: -0.05rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.course-table {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.course-column {
+  /* background-color: rgba(255, 255, 255, 1); */
+  width: 48%;
+  padding: 15px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* accordion */
+.accordion-checkbox {
+  display: none;
+}
+
+.course-type {
+  margin-bottom: 0;
+  display: block;
+  text-align: left;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
+  background: #3498db;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.accordion-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.course-list {
+  padding-left: 20px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-checkbox:checked + .course-type + .course-list {
+  max-height: 1000px;
+  opacity: 1;
+}
+.accordion-checkbox:checked + .course-type .accordion-icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.course-item {
+  padding: 0;
+  margin: 0 1rem 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+  text-indent: -1rem;
+}
+.course-item a {
+  color: #07354f;
+  font-size: 1.05rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem 0 0.5rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.course-item a::after {
+  content: "→";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.course-item a:hover {
+  background-color: #e0f7fa;
+  color: #00838f;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.course-list {
+  transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.course-item:last-child {
+  border-bottom: none;
+}
+
+.ac2 .course-item:nth-child(n+5) {
+  padding: 1rem;
+}
+
+/*  price */
+.price-comparison {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.price-item {
+  text-align: center;
+  padding: 15px;
+  position: relative;
+}
+.price-item h4 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.price-item .price {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.price-item .tax {
+  font-size: 0.8em;
+  color: #7f8c8d;
+  display: block;
+  margin-top: 5px;
+}
+
+.price-arrow {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-item.special {
+  background-color: #fff024;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(26, 188, 156, 0.2);
+}
+.price-item.special .price {
+  color: #f26763;
+  font-size: 2em;
+}
+
+.price-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  border: 10px solid #1a4259;
+  background: #1a4259;
+  border-radius: 1.15rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.price-list li {
+  padding: 15px;
+}
+.price-list li:nth-child(1) {
+  position: relative;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background: rgb(255, 255, 255);
+}
+.price-list li:nth-child(1) h4 {
+  color: #666;
+}
+.price-list li:nth-child(1) p {
+  color: #666;
+  font-size: 1.25rem;
+}
+.price-list li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-top: 1.5rem solid #fff;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+}
+.price-list li:last-child {
+  border-bottom: none;
+  background: #1a4259;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 2rem 0 1rem;
+}
+.price-list h4 {
+  margin: 0 0 5px 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.price-list p {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fffb48;
+}
+.price-list li:last-child span {
+  color: #f0fb48;
+}
+.price-list span {
+  font-size: 0.8rem;
+}
+
+div.cart-mainbutton {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.fa-icon2_item2 i {
+  line-height: 80px;
+  font-size: 3em;
+  color: #fff;
+}
+
+.cart-mainbutton a {
+  width: 100%;
+  display: flex;
+}
+
+.fa-icon2_item1.p_chousei {
+  padding: 0;
+  letter-spacing: 0;
+}
+
+.pinkbtn1 {
+  background: #f3b0d4 !important;
+}
+
+.pinkbtn2 {
+  background: #b57f9c !important;
+}
+
+.lightbluebtn1 {
+  background: #6eb0ff !important;
+}
+
+.lightbluebtn2 {
+  background: #4978b1 !important;
+}
+
+.lightblue2btn1 {
+  background: #50b2e3 !important;
+}
+
+.lightblue2btn2 {
+  background: #359bce !important;
+}
+
+.lightblue3btn1 {
+  background: #66ccff !important;
+}
+
+.lightblue3btn2 {
+  background: #5db1db !important;
+}
+
+.darkbluebtn1 {
+  background: #1d2088 !important;
+}
+
+.darkbluebtn2 {
+  background: #131557 !important;
+}
+
+.lightgreenbtn1 {
+  background: #59c98c !important;
+}
+
+.lightgreenbtn2 {
+  background: #449167 !important;
+}
+
+.orangebtn1 {
+  background: #f8a12d !important;
+}
+
+.orangebtn2 {
+  background: #ba7b26 !important;
+}
+
+.orange2btn1 {
+  background: #ff9966 !important;
+}
+
+.orange2btn2 {
+  background: #db855a !important;
+}
+
+.orange3btn1 {
+  background: #ff6600 !important;
+}
+
+.orange3btn2 {
+  background: #e05a00 !important;
+}
+
+.yellowbtn1 {
+  background: #ffcc00 !important;
+}
+
+.yellowbtn2 {
+  background: #c6ad4a !important;
+}
+
+.yellowgreenbtn1 {
+  background: #8fc31f !important;
+}
+
+.yellowgreenbtn2 {
+  background: #6f961a !important;
+}
+
+.murasakibtn1 {
+  background: #cc66ff !important;
+}
+
+.murasakibtn2 {
+  background: #9a4fbf !important;
+}
+
+.murasaki2btn1 {
+  background: #9933cc !important;
+}
+
+.murasaki2btn2 {
+  background: #662189 !important;
+}
+
+.lightpinkbtn1 {
+  background: #ff9999 !important;
+}
+
+.lightpinkbtn2 {
+  background: #de8888 !important;
+}
+
+.fa-icon2_item1 {
+  flex: 1;
+  padding: 0 20px 0;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbluebtn2 {
+  background: #4978b1 !important;
+}
+
+.fa-icon2_item2 {
+  flex-shrink: 0;
+  width: 80px;
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 準備中ボタン */
+.preparation_container-banner {
+  width: 35rem;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  text-align: center;
+  background: #f26763;
+  padding: 2rem 0 2.5rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  border: 5px solid #fff;
+  position: relative;
+}
+.preparation_container-banner h3 {
+  color: #fff;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.25rem;
+  position: relative;
+  text-align: center;
+}
+.preparation_container-banner h3::after {
+  content: "";
+  width: 25rem;
+  height: 0.5rem;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.5rem;
+  background: #fffb48;
+  border-radius: 2rem;
+}
+
+/* /見放題プラン */
+/* SP見放題*/
+@media (max-width: 768px) {
+  div.cart-mainbutton {
+    width: 90%;
+  }
+  .plan-container {
+    background: url(https://stg.sawa-wp.sawakenweb.com/wpcms/wp-content/uploads/sp_Treasurebox01d.jpg) no-repeat center 100%/cover;
+  }
+  .course-table {
+    display: block;
+  }
+  .course-column {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  .plan-title {
+    font-size: 1.5rem;
+    letter-spacing: -0.1rem;
+  }
+  .plan-intro {
+    font-size: 1rem;
+  }
+  .course-type {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .price-list h4 {
+    font-size: 1.25rem;
+  }
+  .price-list p {
+    font-size: 1.8rem;
+  }
+  .price-list li:nth-child(1)::after {
+    top: 99%;
+    border-top: 4.5vw solid #fff;
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+  }
+  .course-type + .course-list {
+    max-height: 0;
+    opacity: 0;
+  }
+  .course-type:hover {
+    background-color: #00838f;
+  }
+  .accordion-icon {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+  .course-type + .course-list {
+    max-height: 0;
+    opacity: 0;
+  }
+  .course-type:hover {
+    background-color: #00838f;
+  }
+  .accordion-icon {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+  /* accordion1 */
+  #accordion1:checked + .course-type + .course-list {
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+  }
+  #accordion1:checked + .ac2 .course-type + .course-list {
+    max-height: 7rem;
+  }
+  #accordion1:checked + .course-type .accordion-icon {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  #accordion1:checked + .ac1.course-type + .ac1.course-list {
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+  }
+  #accordion1:checked + .ac2.course-column {
+    display: none;
+  }
+  /* accordion2 */
+  #accordion2:checked + .ac2.course-type + .ac2.course-list {
+    max-height: 1000px;
+    opacity: 1;
+    background: #fff;
+    visibility: visible;
+  }
+  #accordion2:checked + .ac1.course-type + .ac1.course-list {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #accordion2:checked + .course-type .accordion-icon {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  /* default check */
+  #accordion1:not(:checked) + .ac1.course-type + .ac1.course-list,
+  #accordion2:not(:checked) + .ac2.course-type + .ac2.course-list {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /*  price */
+  .price-comparison {
+    grid-template-columns: 1fr auto 1.2fr;
+    gap: 10px;
+    padding: 15px 10px;
+  }
+  .price-item {
+    width: 100%;
+  }
+  .price-item h4,
+  .price-item .price {
+    font-size: 1.15em;
+  }
+  .price-item.special .price {
+    font-size: 1.7em;
+  }
+  .price-arrow {
+    margin: 20px 0;
+  }
+  .arrow-text {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .discount-rate {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  /* 準備中ボタン*/
+  .preparation_container-banner {
+    width: 100%;
+    padding: 1.5rem 0 2.5rem;
+  }
+  .preparation_container-banner h3 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .preparation_container-banner h3::after {
+    width: 90%;
+    bottom: -0.5rem;
+    border-radius: 2rem;
+  }
+  /* /SP見放題*/
+}
+@media (max-width: 400px) {
+  div.cart-mainbutton {
+    width: 100%;
+  }
+  .price-item {
+    padding: 15px 5px;
+  }
+}/*# sourceMappingURL=mihoudai.css.map */

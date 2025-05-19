@@ -1,0 +1,21 @@
+/* Size Selector */
+small {
+  font-size: clamp(0.75rem, 0.5667938931rem + 0.3816793893vw, 0.8125rem);
+}
+
+.fs08Rem {
+  font-size: 0.8rem;
+}
+
+.fs1Rem,
+.fs1_25Rem {
+  font-size: 1rem;
+}
+
+.fs1_5Rem {
+  font-size: 1.5rem;
+}
+
+.fs2Rem {
+  font-size: 2rem;
+}/*# sourceMappingURL=fonts.css.map */

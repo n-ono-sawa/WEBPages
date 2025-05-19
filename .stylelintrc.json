@@ -1,0 +1,78 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recess-order",
+    "stylelint-config-prettier-scss"
+  ],
+  "rules": {
+    "indentation": 2, //インデントの自動整形
+    "at-rule-empty-line-before": [
+      //@ルールの前の空行の必須(always)か禁止(never)の統一(自動修正可能)
+      "always",
+      {
+        "except": ["blockless-after-blockless", "first-nested"],
+        "ignore": ["after-comment"], //コメントに続く @ルールを無視
+        "ignoreAtRules": ["else"]
+      }
+    ],
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["include", "mixin", "each", "use", "forward", "for"]
+      }
+    ],
+
+    "block-no-empty": true, // セレクタ指定内にプロパティがない場合にエラーになります。
+    "declaration-colon-space-after": "always", //コロンのあとにスペースを入れます。
+    "block-opening-brace-space-before": "always", //{のあとにスペースを入れます。
+    "color-no-invalid-hex": true, //16進数表記が正しいかチェックしてくれます。
+    "color-named": "never", // "always-where-possible"では色名をつける、"never"では色名をつけないことを強制します。
+    "color-hex-case": "lower", // 16進数の大文字小文字(lower or upper)、長さ(short or long)の指定ができます。
+    "comment-no-empty": true, //空のコメントがないかチェックしてくれます。
+    "comment-empty-line-before": "always", //コメントの前の空行を必須(always)か禁止(never)に統一(自動修正可能)
+    "comment-whitespace-inside": "always", //コメントマーカーの内側の空白を必須(always)か禁止(never)に統一(自動修正可能)
+    "declaration-block-no-duplicate-properties": true, // 同一セレクタ内で同じプロパティが使われていないかをチェックしてくれます。
+    "declaration-block-no-shorthand-property-overrides": true, //ショートハンドのmargin等でmargin-leftなどの設定を打ち消していないかをチェックしてくれます。
+    "declaration-block-no-redundant-longhand-properties": true, //ショートハンドで記述できるものはロングハンドの記述を禁止します。
+    "declaration-bang-space-after": "never", //宣言の先頭の後に1つのスペースを必須(always)か禁止(never)に統一(自動修正可能)
+    "function-calc-no-unspaced-operator": true, //calc()の演算子の左右にスペースが入っているかをチェックしてくれます。
+    "function-url-quotes": "always", //imgのurlを""で囲むことを強制します。
+    "function-name-case": "lower", //関数名を小文字(lower)に統一します。（大文字にしたい場合はupper）
+    "function-max-empty-lines": 0, //関数内の連続する空行の数を制限します。(自動修正可能)
+    "font-family-no-duplicate-names": true, //指定が重複していないかチェックしてくれます。
+    "font-family-name-quotes": "always-unless-keyword", //スペースが含まれるフォントをクォートで囲むかどうかを指定できます。
+    "length-zero-no-unit": true, //0pxを0にするかどうかを指定できます。
+    "media-feature-name-no-unknown": true, //メディアクエリの指定が正しいかチェックしてくれます。
+    "no-duplicate-at-import-rules": true, //同一ファイルをimportしていないかチェックしてくれます。
+    "no-duplicate-selectors": true, //重複セレクタがないかをチェックしてくれます。
+    "no-descending-specificity": null, //NG .ng a { } a { }   OK a { } .ok a { }
+    "no-empty-source": true, //CSSファイルが空でないかをチェックしてくれます。
+    "no-extra-semicolons": true, //セミコロンが重複していないかをチェックしてくれます。
+    "number-leading-zero": "always", //1未満の数の表記を制御できます。"always"なら0.5, "never"なら.5を強制できます。
+    "number-no-trailing-zeros": true, //1.0など数字が0で終わっていないかをチェックしてくれます。
+    "property-no-unknown": true, //不明なプロパティを禁止します。
+    "property-case": "lower", //プロパティを小文字(lower)に統一します（大文字にしたい場合はupper）(自動修正可能)
+    "selector-pseudo-class-no-unknown": true, //不明な疑似クラスセレクタを禁止します。
+    "selector-pseudo-element-no-unknown": true, //不明な疑似要素セレクタを禁止します。
+    "selector-pseudo-element-colon-notation": "double", //疑似要素にのコロンを1つ(single)か2つ(double)に統一します。(自動修正可能)
+    "selector-type-no-unknown": true, //不明なタイプセレクタを禁止します。
+    "selector-type-case": "lower", //タイプセレクタを小文字(lower)に統一します。（大文字にしたい場合はupper）(自動修正可能)
+    "selector-class-pattern": null, //クラスセレクタのパターンを指定します。
+    "selector-id-pattern": null, //IDセレクタのパターンを指定します。
+    "string-no-newline": true, //(エスケープされていない)文字列の改行を禁止します。
+    "string-quotes": "double", //文字列を囲む場合シングルクォーテーション(single)かダブルクォーテーション(double)に統一します。(自動修正可能)
+    "shorthand-property-no-redundant-values": true, //省略形のプロパティで冗長な値を禁止します。(自動修正可能)
+    "time-min-milliseconds": 100, //時間値の最小ミリ秒数を指定します。
+    "unit-no-unknown": true, //不明な単位を禁止します。
+    "unit-case": "lower", //単位を小文字(lower)に統一します。（大文字にしたい場合はupper）(自動修正可能)
+    "value-keyword-case": "lower", //キーワード値を小文字(lower)に統一します。（大文字にしたい場合はupper）(自動修正可能)
+    "keyframes-name-pattern": null, //キーフレーム名のパターンを指定します。
+    "scss/at-mixin-pattern": null, //@mixinを小文字で統一します。
+    "scss/dollar-variable-pattern": null, //変数を小文字で統一します。
+    "scss/percent-placeholder-pattern": null, //SCSSプレースホルダーは小文字で統一します。
+    "scss/at-extend-no-missing-placeholder": null, //@extendは%を使います。
+    "max-line-length": null, //行の長さを制限します。
+    "max-empty-lines": null, //連続する空行の数を制限します。(自動修正可能)
+    "scss/double-slash-comment-whitespace-inside": "always" //コメントマーカーの内側の空白を必須(always)に統一します。（禁止にしたい場合はnever）(自動修正可能)
+  }
+}

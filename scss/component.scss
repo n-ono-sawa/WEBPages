@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* Size Selector */
+.fColor-Red {
+  color: #f00;
+}
+
+.fColor-Brown {
+  color: #522411;
+}
+
+.fColor-pink {
+  color: #ee1e7b;
+}
+
+.fColor-orange {
+  color: #f7931d;
+}
+
+.bg-sky {
+  background-color: #0056b3;
+}
+
+.bg-babyBlue {
+  background-color: #ccedfc;
+}
+
+#mapAreaA {
+  z-index: 1;
+}
+
+#mapAreaB {
+  z-index: 0;
+}
+
+#access_btn {
+  z-index: -1;
+}
+
+.pl05Rem {
+  padding-left: 0.5rem;
+}
+
+.pt1Rem {
+  padding-top: 1rem;
+}
+
+.pt2Rem {
+  padding-top: 2rem;
+}
+
+.pt4Rem {
+  padding-top: 4rem;
+}
+
+.mt05Rem {
+  margin-top: 0.5rem;
+}
+
+.mt1Rem {
+  margin-top: 1rem;
+}
+
+.ml05Rem {
+  margin-left: 0.5rem;
+}
+
+.mr05Rem {
+  margin-right: 0.5rem;
+}
+
+.mb05Rem {
+  margin-bottom: 0.5rem;
+}
+
+.mb1Rem {
+  margin-bottom: 1rem;
+}
+
+.mb2Rem {
+  margin-bottom: 2rem;
+}
+
+.mb4Rem {
+  margin-bottom: 4rem;
+}
+
+.fwB {
+  font-weight: bold;
+}
+
+.fwN {
+  font-weight: normal;
+}
+
+.fs08Rem {
+  font-size: 0.8rem;
+}
+
+.fs1Rem,
+.fs1_25Rem {
+  font-size: 1rem;
+}
+
+.fs1_5Rem {
+  font-size: 1.5rem;
+}
+
+.fs2Rem {
+  font-size: 2rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.position-unset {
+  position: unset;
+}
+
+.d-block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.dotted-Pink {
+  background-image: linear-gradient(to right, #ee1e7b 20px, transparent 20px);
+  background-size: 40px 4px;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+
+.txtShadow-wLine {
+  text-shadow: 3px 3px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+    -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
